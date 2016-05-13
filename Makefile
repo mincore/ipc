@@ -1,5 +1,5 @@
-CFLAGS+=-g -Wall -m32
-LDFLAGS+=-lpthread -m32
+CFLAGS+=-g -Wall
+LDFLAGS+=-lpthread
 
 test: ipc.o test.o
 	gcc $^ $(LDFLAGS) -o $@
